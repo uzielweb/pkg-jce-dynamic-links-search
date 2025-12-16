@@ -34,12 +34,12 @@ class pkg_jce_dynamic_links_searchInstallerScript implements InstallerScriptInte
     /**
      * Function called before extension installation/update/removal procedure commences
      *
-     * @param   string            $type    The type of change (install or discover_install, update, uninstall)
-     * @param   InstallerAdapter  $parent  The class calling this method
+     * @param   string            $type     The type of change (install or discover_install, update, uninstall)
+     * @param   InstallerAdapter  $adapter  The class calling this method
      *
-     * @return  boolean  True on success
+     * @return  bool  True on success
      */
-    public function preflight($type, $parent)
+    public function preflight(string $type, InstallerAdapter $adapter): bool
     {
         // Check minimum Joomla version
         if (version_compare(JVERSION, $this->minimumJoomla, '<')) {
@@ -71,12 +71,12 @@ class pkg_jce_dynamic_links_searchInstallerScript implements InstallerScriptInte
     /**
      * Function called after extension installation/update/removal procedure commences
      *
-     * @param   string            $type    The type of change (install, update or discover_install)
-     * @param   InstallerAdapter  $parent  The class calling this method
+     * @param   string            $type     The type of change (install, update or discover_install)
+     * @param   InstallerAdapter  $adapter  The class calling this method
      *
-     * @return  boolean  True on success
+     * @return  bool  True on success
      */
-    public function postflight($type, $parent)
+    public function postflight(string $type, InstallerAdapter $adapter): bool
     {
         $app = Factory::getApplication();
 
