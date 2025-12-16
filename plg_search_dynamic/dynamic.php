@@ -38,6 +38,7 @@ class PlgSearchDynamic extends CMSPlugin
      */
     private function getDynamicConfigs()
     {
+        // Try to get the JCE Links Dynamic plugin
         $plugin = PluginHelper::getPlugin('jce', 'links_dynamic');
         
         if (!$plugin) {
@@ -59,6 +60,10 @@ class PlgSearchDynamic extends CMSPlugin
     {
         $areas = array();
         $configs = $this->getDynamicConfigs();
+        
+        if (empty($configs)) {
+            return $areas;
+        }
         
         foreach ($configs as $index => $config) {
             if (!empty($config->component) && !empty($config->label)) {
@@ -87,7 +92,11 @@ class PlgSearchDynamic extends CMSPlugin
         $app = Factory::getApplication();
         $user = $app->getIdentity();
 
-        if (is_array($areas) && !array_intersect($areas, array_keys($this->onContentSearchAreas()))) {
+        // Get our search areas
+        $searchAreas = $this->onContentSearchAreas();
+        
+        // Check if we should search in this plugin
+        if (is_array($areas) && !array_intersect($areas, array_keys($searchAreas))) {
             return array();
         }
 
@@ -100,6 +109,10 @@ class PlgSearchDynamic extends CMSPlugin
 
         $rows = array();
         $configs = $this->getDynamicConfigs();
+        
+        if (empty($configs)) {
+            return array();
+        }
 
         // Loop through each configuration
         foreach ($configs as $index => $config) {
