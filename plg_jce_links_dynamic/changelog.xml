@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+	<release version="1.0.3">
+		<notes>
+			<note>Padronização da nomenclatura para links_dynamic (underscore)</note>
+			<note>Atualização de todas as URLs do GitHub</note>
+			<note>Renomeados arquivos para usar links_dynamic</note>
+		</notes>
+	</release>
+	<release version="1.0.2">
+		<notes>
+			<note>Correção da nomenclatura</note>
+			<note>Atualização de arquivos</note>
+			<note>Atualização de todas as referências ao plugin</note>
+		</notes>
+	</release>
+	<release version="1.0.1">
+		<notes>
+			<note>Padronização da nomenclatura do plugin para links_dynamic (underscore)</note>
+			<note>Renomeados arquivos principais para seguir convenção Joomla</note>
+			<note>Atualização das referências internas ao plugin</note>
+		</notes>
+	</release>
+	<release version="1.0.0">
+		<notes>
+			<note>Versão inicial do plugin JCE Links Dinâmicos</note>
+			<note>Suporte para configuração dinâmica de múltiplas extensões e tabelas</note>
+			<note>Escolha livre de campos ID, título e campos adicionais para exibição</note>
+			<note>Filtros por estado com valores personalizáveis</note>
+			<note>Ordenação configurável por qualquer campo</note>
+			<note>Suporte para traduções em português (pt-BR) e inglês (en-GB)</note>
+			<note>Servidor de atualização para atualizações automáticas</note>
+		</notes>
+	</release>
+</changelog>

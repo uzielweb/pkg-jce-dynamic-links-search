@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>Plugin JCE Links Dinâmicos para Joomla - Crie Links Personalizados de Qualquer Extensão</name>
+		<description>Plugin Joomla que permite criar links dinâmicos de qualquer extensão e tabela do banco de dados no editor JCE, com configuração flexível de campos e exibição</description>
+		<element>plg_jce_links_dynamic</element>
+		<type>plugin</type>
+		<folder>jce</folder>
+		<version>1.0.3</version>
+		<infourl>https://github.com/uzielweb/plg_jce_links_dynamic</infourl>
+		<changelogurl>https://raw.githubusercontent.com/uzielweb/plg_jce_links_dynamic/main/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/uzielweb/plg_jce_links_dynamic/archive/refs/tags/v1.0.3.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Ponto Mega</maintainer>
+		<maintainerurl>https://github.com/uzielweb</maintainerurl>
+		<targetplatform name="joomla" version="4.0"/>
+	</update>
+	<update>
+		<name>Plugin JCE Links Dinâmicos para Joomla - Crie Links Personalizados de Qualquer Extensão</name>
+		<description>Plugin Joomla que permite criar links dinâmicos de qualquer extensão e tabela do banco de dados no editor JCE, com configuração flexível de campos e exibição</description>
+		<element>plg_jce_links_dynamic</element>
+		<type>plugin</type>
+		<folder>jce</folder>
+		<version>1.0.2</version>
+		<infourl>https://github.com/uzielweb/plg_jce_links_dynamic</infourl>
+		<changelogurl>https://raw.githubusercontent.com/uzielweb/plg_jce_links_dynamic/main/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/uzielweb/plg_jce_links_dynamic/archive/refs/tags/v1.0.2.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Ponto Mega</maintainer>
+		<maintainerurl>https://github.com/uzielweb</maintainerurl>
+		<targetplatform name="joomla" version="4.0"/>
+	</update>
+	<update>
+		<name>Plugin JCE Links Dinâmicos para Joomla - Crie Links Personalizados de Qualquer Extensão</name>
+		<description>Plugin Joomla que permite criar links dinâmicos de qualquer extensão e tabela do banco de dados no editor JCE, com configuração flexível de campos e exibição</description>
+		<element>plg_jce_links_dynamic</element>
+		<type>plugin</type>
+		<folder>jce</folder>
+		<version>1.0.1</version>
+		<infourl>https://github.com/uzielweb/plg_jce_links_dynamic</infourl>
+		<changelogurl>https://raw.githubusercontent.com/uzielweb/plg_jce_links_dynamic/main/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/uzielweb/plg_jce_links_dynamic/archive/refs/tags/v1.0.1.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Ponto Mega</maintainer>
+		<maintainerurl>https://github.com/uzielweb</maintainerurl>
+		<targetplatform name="joomla" version="4.0"/>
+	</update>
+</updates>

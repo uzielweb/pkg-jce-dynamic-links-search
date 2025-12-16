@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="jce" method="upgrade">
+	<name>plg_jce_links_dynamic</name>
+	<author>Ponto Mega</author>
+	<creationDate>2025-12-16</creationDate>
+	<copyright>Ponto Mega - 2025</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.3</version>
+	<description>PLG_JCE_LINKS_DYNAMIC_DESC</description>
+
+	<files>
+		<filename plugin="links_dynamic">links_dynamic.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_jce_links_dynamic.ini</language>
+		<language tag="en-GB">language/en-GB/plg_jce_links_dynamic.sys.ini</language>
+		<language tag="pt-BR">language/pt-BR/plg_jce_links_dynamic.ini</language>
+		<language tag="pt-BR">language/pt-BR/plg_jce_links_dynamic.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="link_configs"
+					type="subform"
+					label="PLG_JCE_LINKS_DYNAMIC_CONFIGS_LABEL"
+					description="PLG_JCE_LINKS_DYNAMIC_CONFIGS_DESC"
+					multiple="true"
+					layout="joomla.form.field.subform.repeatable-table"
+					groupByFieldset="true"
+					min="1"
+				>
+					<form>
+						<fieldset name="config_item">
+							<field
+								name="label"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_LABEL"
+								description="PLG_JCE_LINKS_DYNAMIC_LABEL_DESC"
+								required="true"
+								size="30"
+								hint="Ex: Artigos, Produtos, etc"
+							/>
+							<field
+								name="component"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_COMPONENT"
+								description="PLG_JCE_LINKS_DYNAMIC_COMPONENT_DESC"
+								required="true"
+								size="30"
+								hint="Ex: com_content, com_produtos"
+							/>
+							<field
+								name="table"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_TABLE"
+								description="PLG_JCE_LINKS_DYNAMIC_TABLE_DESC"
+								required="true"
+								size="30"
+								hint="Ex: content, produtos (sem #__)"
+							/>
+							<field
+								name="id_field"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_ID_FIELD"
+								description="PLG_JCE_LINKS_DYNAMIC_ID_FIELD_DESC"
+								default="id"
+								size="20"
+								hint="Ex: id"
+							/>
+							<field
+								name="title_field"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_TITLE_FIELD"
+								description="PLG_JCE_LINKS_DYNAMIC_TITLE_FIELD_DESC"
+								default="title"
+								size="20"
+								hint="Ex: title, nome, name"
+							/>
+							<field
+								name="display_fields"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_DISPLAY_FIELDS"
+								description="PLG_JCE_LINKS_DYNAMIC_DISPLAY_FIELDS_DESC"
+								size="40"
+								hint="Ex: language, catid (separados por vírgula)"
+							/>
+							<field
+								name="state_field"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_STATE_FIELD"
+								description="PLG_JCE_LINKS_DYNAMIC_STATE_FIELD_DESC"
+								default="state"
+								size="20"
+								hint="Ex: state, published"
+							/>
+							<field
+								name="state_value"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_STATE_VALUE"
+								description="PLG_JCE_LINKS_DYNAMIC_STATE_VALUE_DESC"
+								default="1"
+								size="10"
+								hint="Ex: 1"
+							/>
+							<field
+								name="order_field"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_ORDER_FIELD"
+								description="PLG_JCE_LINKS_DYNAMIC_ORDER_FIELD_DESC"
+								size="20"
+								hint="Ex: title, ordering"
+							/>
+							<field
+								name="order_dir"
+								type="list"
+								label="PLG_JCE_LINKS_DYNAMIC_ORDER_DIR"
+								description="PLG_JCE_LINKS_DYNAMIC_ORDER_DIR_DESC"
+								default="ASC"
+							>
+								<option value="ASC">JGLOBAL_ORDER_ASCENDING</option>
+								<option value="DESC">JGLOBAL_ORDER_DESCENDING</option>
+							</field>
+							<field
+								name="view_name"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_VIEW_NAME"
+								description="PLG_JCE_LINKS_DYNAMIC_VIEW_NAME_DESC"
+								default="item"
+								size="20"
+								hint="Ex: article, item, produto"
+							/>
+							<field
+								name="id_param"
+								type="text"
+								label="PLG_JCE_LINKS_DYNAMIC_ID_PARAM"
+								description="PLG_JCE_LINKS_DYNAMIC_ID_PARAM_DESC"
+								default="id"
+								size="20"
+								hint="Ex: id, a_id"
+							/>
+						</fieldset>
+					</form>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Ponto Mega Updates">https://raw.githubusercontent.com/uzielweb/plg_jce_links_dynamic/refs/heads/master/update.xml</server>
+	</updateservers>
+</extension>
