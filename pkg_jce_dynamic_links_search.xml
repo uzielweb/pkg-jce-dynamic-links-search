@@ -13,9 +13,9 @@
     
     <scriptfile>script.php</scriptfile>
     
-    <files folder="packages">
-        <file type="plugin" id="links_dynamic" group="jce">plg_jce_links_dynamic.zip</file>
-        <file type="plugin" id="dynamic" group="search">plg_search_dynamic.zip</file>
+    <files folder=".">
+        <folder type="plugin" id="plg_jce_links_dynamic" group="jce">plg_jce_links_dynamic</folder>
+        <folder type="plugin" id="plg_search_dynamic" group="search">plg_search_dynamic</folder>
     </files>
     
     <updateservers>
