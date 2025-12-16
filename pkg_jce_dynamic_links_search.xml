@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" method="upgrade">
+    <name>PKG_JCE_DYNAMIC_LINKS_SEARCH</name>
+    <packagename>jce_dynamic_links_search</packagename>
+    <version>1.0.0</version>
+    <creationDate>December 2025</creationDate>
+    <author>Ponto Mega</author>
+    <authorEmail>dev@pontomega.com.br</authorEmail>
+    <authorUrl>https://github.com/uzielweb</authorUrl>
+    <copyright>Copyright (C) 2025 Ponto Mega. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <description>PKG_JCE_DYNAMIC_LINKS_SEARCH_DESC</description>
+    
+    <scriptfile>script.php</scriptfile>
+    
+    <files folder="packages">
+        <file type="plugin" id="links_dynamic" group="jce">plg_jce_links_dynamic.zip</file>
+        <file type="plugin" id="dynamic" group="search">plg_search_dynamic.zip</file>
+    </files>
+    
+    <updateservers>
+        <server type="extension" priority="1" name="JCE Dynamic Links Search Updates">https://raw.githubusercontent.com/uzielweb/pkg-jce-dynamic-links-search/main/update.xml</server>
+    </updateservers>
+    
+    <languages folder="language">
+        <language tag="en-GB">en-GB/pkg_jce_dynamic_links_search.ini</language>
+        <language tag="en-GB">en-GB/pkg_jce_dynamic_links_search.sys.ini</language>
+        <language tag="pt-BR">pt-BR/pkg_jce_dynamic_links_search.ini</language>
+        <language tag="pt-BR">pt-BR/pkg_jce_dynamic_links_search.sys.ini</language>
+    </languages>
+</extension>

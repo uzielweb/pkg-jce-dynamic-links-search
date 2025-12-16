@@ -1,0 +1,9 @@
+*.zip
+!releases/*.zip
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
