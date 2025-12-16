@@ -2,7 +2,7 @@
 <extension type="package" method="upgrade">
     <name>PKG_JCE_DYNAMIC_LINKS_SEARCH</name>
     <packagename>jce_dynamic_links_search</packagename>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <creationDate>December 2025</creationDate>
     <author>Ponto Mega</author>
     <authorEmail>dev@pontomega.com.br</authorEmail>

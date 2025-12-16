@@ -5,6 +5,24 @@
 		<description>Complete package for dynamic link browsing and searching in JCE Editor</description>
 		<element>pkg_jce_dynamic_links_search</element>
 		<type>package</type>
+		<version>1.0.6</version>
+		<infourl>https://github.com/uzielweb/pkg-jce-dynamic-links-search</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/uzielweb/pkg-jce-dynamic-links-search/releases/download/v1.0.6/pkg_jce_dynamic_links_search_v1.0.6.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Ponto Mega</maintainer>
+		<maintainerurl>https://github.com/uzielweb</maintainerurl>
+		<targetplatform name="joomla" version="4.0"/>
+		<targetplatform name="joomla" version="5.0"/>
+	</update>
+	<update>
+		<name>JCE Dynamic Links & Search Package</name>
+		<description>Complete package for dynamic link browsing and searching in JCE Editor</description>
+		<element>pkg_jce_dynamic_links_search</element>
+		<type>package</type>
 		<version>1.0.5</version>
 		<infourl>https://github.com/uzielweb/pkg-jce-dynamic-links-search</infourl>
 		<downloads>

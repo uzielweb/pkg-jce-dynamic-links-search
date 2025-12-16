@@ -10,7 +10,6 @@
 
 	<files>
 		<filename plugin="links_dynamic">links_dynamic.php</filename>
-		<filename>dynamic.xml</filename>
 	</files>
 
 	<languages>
