@@ -98,12 +98,11 @@ class pkg_jce_dynamic_links_searchInstallerScript implements InstallerScriptInte
     /**
      * Runs right after any installation action
      *
-     * @param   string            $type    Type of PostFlight action
-     * @param   InstallerAdapter  $parent  Parent object calling object
+     * @param   InstallerAdapter  $adapter  Adapter object calling object
      *
-     * @return  boolean True on success
+     * @return  bool True on success
      */
-    public function install($parent)
+    public function install(InstallerAdapter $adapter): bool
     {
         return true;
     }
@@ -111,12 +110,11 @@ class pkg_jce_dynamic_links_searchInstallerScript implements InstallerScriptInte
     /**
      * Runs right after any update action
      *
-     * @param   string            $type    Type of PostFlight action
-     * @param   InstallerAdapter  $parent  Parent object calling object
+     * @param   InstallerAdapter  $adapter  Adapter object calling object
      *
-     * @return  boolean True on success
+     * @return  bool True on success
      */
-    public function update($parent)
+    public function update(InstallerAdapter $adapter): bool
     {
         return true;
     }
@@ -124,11 +122,11 @@ class pkg_jce_dynamic_links_searchInstallerScript implements InstallerScriptInte
     /**
      * Runs right after any uninstall action
      *
-     * @param   InstallerAdapter  $parent  Parent object calling object
+     * @param   InstallerAdapter  $adapter  Adapter object calling object
      *
-     * @return  boolean True on success
+     * @return  bool True on success
      */
-    public function uninstall($parent)
+    public function uninstall(InstallerAdapter $adapter): bool
     {
         return true;
     }
