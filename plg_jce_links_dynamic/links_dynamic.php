@@ -1,6 +1,6 @@
 <?php
 /**
- * @version     1.0.3
+ * @version     1.0.4
  * @package     JCE Dynamic Links
  * @author      Ponto Mega
  * @copyright   Copyright (c) 2025 Ponto Mega. All rights reserved.
@@ -48,6 +48,11 @@ class WFLinkBrowser_dynamic extends CMSObject
         }
         
         return array_unique($options);
+    }
+    
+    public function getName()
+    {
+        return 'dynamic';
     }
 
     public function getInstance()

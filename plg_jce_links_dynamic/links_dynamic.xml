@@ -5,11 +5,12 @@
 	<creationDate>2025-12-16</creationDate>
 	<copyright>Ponto Mega - 2025</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<description>PLG_JCE_LINKS_DYNAMIC_DESC</description>
 
 	<files>
 		<filename plugin="links_dynamic">links_dynamic.php</filename>
+		<filename>dynamic.xml</filename>
 	</files>
 
 	<languages>
